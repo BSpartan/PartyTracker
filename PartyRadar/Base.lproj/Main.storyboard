@@ -42,7 +42,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="mapView" destination="lMf-92-yQZ" id="QLB-dw-B3q"/>
+                        <outlet property="theMap" destination="lMf-92-yQZ" id="1fb-ey-8da"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

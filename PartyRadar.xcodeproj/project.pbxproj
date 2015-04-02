@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F50705D71ACD34A9009C819E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50705D61ACD34A9009C819E /* CoreLocation.framework */; };
+		F50E11C91ACD425600201694 /* PartyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50E11C81ACD425600201694 /* PartyLocation.swift */; };
+		F50E11CB1ACD426400201694 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50E11CA1ACD426400201694 /* Party.swift */; };
+		F50E11D01ACD534500201694 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E11CF1ACD534500201694 /* pin.png */; };
+		F50E11D31ACD53EC00201694 /* firstaid.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E11D11ACD53EC00201694 /* firstaid.png */; };
+		F50E11D41ACD53EC00201694 /* firstaid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F50E11D21ACD53EC00201694 /* firstaid@2x.png */; };
+		F50E11D61ACD546100201694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50E11D51ACD546100201694 /* UIKit.framework */; };
+		F50E11DA1ACD547C00201694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50E11D91ACD547C00201694 /* Foundation.framework */; };
 		F51B8D8E1AC414FC00CC897A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B8D8D1AC414FC00CC897A /* AppDelegate.swift */; };
 		F51B8D911AC414FC00CC897A /* PartyRadar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F51B8D8F1AC414FC00CC897A /* PartyRadar.xcdatamodeld */; };
 		F51B8D931AC414FC00CC897A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51B8D921AC414FC00CC897A /* ViewController.swift */; };
@@ -30,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F50705D61ACD34A9009C819E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F50E11C81ACD425600201694 /* PartyLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyLocation.swift; sourceTree = "<group>"; };
+		F50E11CA1ACD426400201694 /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		F50E11CF1ACD534500201694 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		F50E11D11ACD53EC00201694 /* firstaid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstaid.png; sourceTree = "<group>"; };
+		F50E11D21ACD53EC00201694 /* firstaid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firstaid@2x.png"; sourceTree = "<group>"; };
+		F50E11D51ACD546100201694 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F50E11D71ACD546800201694 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F50E11D91ACD547C00201694 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F51B8D881AC414FC00CC897A /* PartyRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51B8D8C1AC414FC00CC897A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51B8D8D1AC414FC00CC897A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +60,7 @@
 		F51B8DA61AC414FC00CC897A /* PartyRadarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyRadarTests.swift; sourceTree = "<group>"; };
 		F51B8DB01AC4150400CC897A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F51B8DB21AC4153200CC897A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		F51B8DB61AC4378900CC897A /* logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_small.png; path = design/elements/logo_small.png; sourceTree = "<group>"; };
+		F51B8DB61AC4378900CC897A /* logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_small.png; path = ../../design/elements/logo_small.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50E11DA1ACD547C00201694 /* Foundation.framework in Frameworks */,
+				F50E11D61ACD546100201694 /* UIKit.framework in Frameworks */,
+				F50705D71ACD34A9009C819E /* CoreLocation.framework in Frameworks */,
 				F51B8DB11AC4150400CC897A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,10 +85,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F50E11CE1ACD533400201694 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F51B8DB61AC4378900CC897A /* logo_small.png */,
+				F50E11D11ACD53EC00201694 /* firstaid.png */,
+				F50E11D21ACD53EC00201694 /* firstaid@2x.png */,
+				F50E11CF1ACD534500201694 /* pin.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		F51B8D7F1AC414FB00CC897A = {
 			isa = PBXGroup;
 			children = (
-				F51B8DB51AC4376800CC897A /* Recources */,
+				F57BD62D1ACD5DFD0033080A /* Frameworks */,
 				F51B8DB01AC4150400CC897A /* MapKit.framework */,
 				F51B8D8A1AC414FC00CC897A /* PartyRadar */,
 				F51B8DA31AC414FC00CC897A /* PartyRadarTests */,
@@ -88,14 +119,17 @@
 		F51B8D8A1AC414FC00CC897A /* PartyRadar */ = {
 			isa = PBXGroup;
 			children = (
+				F50E11CE1ACD533400201694 /* Images */,
 				F51B8D8D1AC414FC00CC897A /* AppDelegate.swift */,
 				F51B8D921AC414FC00CC897A /* ViewController.swift */,
 				F51B8D941AC414FC00CC897A /* Main.storyboard */,
 				F51B8D971AC414FC00CC897A /* Images.xcassets */,
 				F51B8D991AC414FC00CC897A /* LaunchScreen.xib */,
 				F51B8D8F1AC414FC00CC897A /* PartyRadar.xcdatamodeld */,
-				F51B8D8B1AC414FC00CC897A /* Supporting Files */,
 				F51B8DB21AC4153200CC897A /* MainViewController.swift */,
+				F50E11C81ACD425600201694 /* PartyLocation.swift */,
+				F50E11CA1ACD426400201694 /* Party.swift */,
+				F51B8D8B1AC414FC00CC897A /* Supporting Files */,
 			);
 			path = PartyRadar;
 			sourceTree = "<group>";
@@ -125,12 +159,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F51B8DB51AC4376800CC897A /* Recources */ = {
+		F57BD62D1ACD5DFD0033080A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F51B8DB61AC4378900CC897A /* logo_small.png */,
+				F50E11D91ACD547C00201694 /* Foundation.framework */,
+				F50E11D71ACD546800201694 /* CoreGraphics.framework */,
+				F50E11D51ACD546100201694 /* UIKit.framework */,
+				F50705D61ACD34A9009C819E /* CoreLocation.framework */,
 			);
-			name = Recources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +257,10 @@
 			files = (
 				F51B8D961AC414FC00CC897A /* Main.storyboard in Resources */,
 				F51B8D9B1AC414FC00CC897A /* LaunchScreen.xib in Resources */,
+				F50E11D41ACD53EC00201694 /* firstaid@2x.png in Resources */,
 				F51B8DB71AC4378900CC897A /* logo_small.png in Resources */,
+				F50E11D01ACD534500201694 /* pin.png in Resources */,
+				F50E11D31ACD53EC00201694 /* firstaid.png in Resources */,
 				F51B8D981AC414FC00CC897A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F51B8D931AC414FC00CC897A /* ViewController.swift in Sources */,
+				F50E11C91ACD425600201694 /* PartyLocation.swift in Sources */,
 				F51B8D8E1AC414FC00CC897A /* AppDelegate.swift in Sources */,
 				F51B8D911AC414FC00CC897A /* PartyRadar.xcdatamodeld in Sources */,
+				F50E11CB1ACD426400201694 /* Party.swift in Sources */,
 				F51B8DB31AC4153200CC897A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +476,7 @@
 				F51B8DAC1AC414FC00CC897A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F51B8DAD1AC414FC00CC897A /* Build configuration list for PBXNativeTarget "PartyRadarTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +485,7 @@
 				F51B8DAF1AC414FC00CC897A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

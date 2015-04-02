@@ -7,47 +7,87 @@
 //
 
 import UIKit
+import CoreLocation
 import MapKit
 
-class MainViewController: UIViewController, MKMapViewDelegate {
+class MainViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate  {
     
-    @IBOutlet var mapView: MKMapView!
+    var manager = CLLocationManager()
+    
+    @IBOutlet weak var theMap: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 1
-        let location = CLLocationCoordinate2D(
-            latitude: 51.441642,
-            longitude: 5.469722
-        )
-        // 2
-        let span = MKCoordinateSpanMake(0.05, 0.05)
-        let region = MKCoordinateRegion(center: location, span: span)
-        println(mapView)
-        self.mapView.setRegion(region, animated: true)
+        self.manager.requestWhenInUseAuthorization()
+        updateMap()
+    }
+    
+    //MARK: location manager
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!){
+        var locValue:CLLocationCoordinate2D = manager.location.coordinate
         
-        //3
+        println("locations = \(locValue.latitude) \(locValue.longitude)")
+        
+        let latitude:CLLocationDegrees = locValue.latitude
+        let longitude: CLLocationDegrees = locValue.longitude
+        
+        //change for Zoom Level
+        let latDelta: CLLocationDegrees = 0.5
+        let longDelta: CLLocationDegrees = 0.5
+        
+        //update the map
+        var theSpan: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
+        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        var theRegion:MKCoordinateRegion = MKCoordinateRegionMake(location, theSpan)
+        self.theMap.setRegion(theRegion, animated: true)
+        
         let annotation = MKPointAnnotation()
         annotation.setCoordinate(location)
         annotation.title = "Eindhoven"
         annotation.subtitle = "Chillen"
-        self.mapView.addAnnotation(annotation)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        self.theMap.addAnnotation(annotation);
+        
+        //stop updating location for manual update
+        self.manager.stopUpdatingLocation()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func updateMap() {
+        
+        if (CLLocationManager.locationServicesEnabled())
+        {
+            manager.delegate = self
+            manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            manager.startUpdatingLocation()
+        }
     }
-    */
+    
+    func mapView(mapView: MKMapView!,
+        viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+            
+            if annotation is MKUserLocation {
+                //return nil so map view draws "blue dot" for standard user location
+                return nil
+            }
+            
+            let reuseId = "pin"
+            
+            var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as? MKPinAnnotationView
+            if pinView == nil {
+                pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+                pinView!.image = UIImage(named: "pin")
+                pinView!.canShowCallout = true
+                pinView!.animatesDrop = true
+                pinView!.pinColor = .Purple
+                
+            }
+            else {
+                pinView!.annotation = annotation
+            }
+            
+            return pinView
+    }
 
 }
