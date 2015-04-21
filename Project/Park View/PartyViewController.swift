@@ -34,7 +34,7 @@ class PartyViewController: UIViewController {
         self.partyLocation.text = "Eindhoven"
         self.partyGenre.text = "Hardstyle"
         self.partyArtistName.text = "Naam1  Naam1  Naam3  Naam4  Naam5  Naam6  Naam7"
-        self.partyTime.text = "06-07-2015 12:00 - 00:00"
+        self.partyTime.text = "12:00 - 00:00"
         self.partyAge.text = "16+"
     }
     

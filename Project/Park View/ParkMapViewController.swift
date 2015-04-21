@@ -13,15 +13,17 @@ class ParkMapViewController: UIViewController, MKMapViewDelegate {
   @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
   @IBOutlet weak var mapView: MKMapView!
   @IBOutlet weak var partyContainer: UIView!
-    
+    @IBOutlet weak var searchField: UITextField!
     
   var park = Park(filename: "MagicMountain")
   var selectedOptions = [MapOptionsType]()
-    var pinInformationView: UIView!
+  var pinInformationView: UIView!
+    var partyViewController: PartyViewController?
     
   var pinInformationViewController: PinInformationViewController!
   
   override func viewDidLoad() {
+    self.partyContainer.frame = CGRectMake(0, 700, 500, 500);
     super.viewDidLoad()
     
     let latDelta = park.overlayTopLeftCoordinate.latitude -
@@ -35,12 +37,12 @@ class ParkMapViewController: UIViewController, MKMapViewDelegate {
     mapView.region = region
     mapView.delegate = self;
     
-     self.partyContainer.frame = CGRectMake(0, 700, 500, 500);
     
-    // pin information subview
-    /*let storyboard = UIStoryboard(name: "MainStoryboard_Iphone", bundle: nil)
-    let vc = storyboard.instantiateViewControllerWithIdentifier("PinInformationViewController") as UIViewController
-    view.addSubview(vc.view)*/
+    
+    addAttractionPins()
+    
+
+    
   }
   
   override func didReceiveMemoryWarning() {
@@ -65,6 +67,12 @@ class ParkMapViewController: UIViewController, MKMapViewDelegate {
     }
   }
 
+   
+    @IBAction func searchCancel(sender: AnyObject) {
+        searchField.text = ""
+        self.view.endEditing(true)
+    }
+
     func createPinInformation() {
         pinInformationView.backgroundColor = UIColor.whiteColor()
         var title = UILabel(frame: CGRectMake(0, 0, 200, 21))
@@ -74,32 +82,10 @@ class ParkMapViewController: UIViewController, MKMapViewDelegate {
         self.pinInformationView.addSubview(title)
     }
   
-  // MARK: Helper methods
-  
-  func loadSelectedOptions() {
-    mapView.removeAnnotations(mapView.annotations)
-    mapView.removeOverlays(mapView.overlays)
-    
-    for option in selectedOptions {
-      switch (option) {
-        case .MapPins:
-          addAttractionPins()
-      default:
-        return
-      }
-    }
-  }
-  
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    //let optionsViewController = segue.destinationViewController as MapOptionsViewController
+    partyViewController = segue.destinationViewController as? PartyViewController
     //optionsViewController.selectedOptions = selectedOptions
-  }
-  
-  @IBAction func closeOptions(exitSegue: UIStoryboardSegue) {
-    let optionsViewController = exitSegue.sourceViewController as MapOptionsViewController
-    selectedOptions = optionsViewController.selectedOptions
-    loadSelectedOptions()
-  }
+    }
     
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
         //let annotationView = AttractionAnnotationView(annotation: annotation, reuseIdentifier: "Attraction")
@@ -114,6 +100,10 @@ class ParkMapViewController: UIViewController, MKMapViewDelegate {
             UIView.animateWithDuration(0.5, animations: {
                 self.partyContainer.frame = CGRectMake(0, 300, 500, 500);
             })
+            
+            if(partyViewController != nil) {
+                partyViewController?.setPartyProperties();
+            }
         }
     }
     

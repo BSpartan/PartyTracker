@@ -35,6 +35,9 @@
 		D3D60AFA1953285C00BED91B /* ride@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF21953285C00BED91B /* ride@2x.png */; };
 		D3D60AFB1953285C00BED91B /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF31953285C00BED91B /* star.png */; };
 		D3D60AFC1953285C00BED91B /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF41953285C00BED91B /* star@2x.png */; };
+		F51D3E161AE6BAB900E1D503 /* topBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F51D3E151AE6BAB900E1D503 /* topBarBackground.png */; };
+		F51D3E181AE6BAC400E1D503 /* dots.png in Resources */ = {isa = PBXBuildFile; fileRef = F51D3E171AE6BAC400E1D503 /* dots.png */; };
+		F51D3E1A1AE6BACE00E1D503 /* detailsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F51D3E191AE6BACE00E1D503 /* detailsBackground.png */; };
 		F5225CD71ADC5D7500192766 /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5225CD61ADC5D7500192766 /* PartyViewController.swift */; };
 		F57BD5FB1ACD5B460033080A /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F57BD5FA1ACD5B460033080A /* pin.png */; };
 		F5FE52D31AD667EA001CD1D7 /* PartyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE52D21AD667EA001CD1D7 /* PartyLocation.swift */; };
@@ -82,6 +85,9 @@
 		D3D60AF21953285C00BED91B /* ride@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ride@2x.png"; sourceTree = "<group>"; };
 		D3D60AF31953285C00BED91B /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		D3D60AF41953285C00BED91B /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		F51D3E151AE6BAB900E1D503 /* topBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarBackground.png; sourceTree = "<group>"; };
+		F51D3E171AE6BAC400E1D503 /* dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dots.png; sourceTree = "<group>"; };
+		F51D3E191AE6BACE00E1D503 /* detailsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detailsBackground.png; sourceTree = "<group>"; };
 		F5225CD61ADC5D7500192766 /* PartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
 		F57BD5FA1ACD5B460033080A /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 		F5FE52D21AD667EA001CD1D7 /* PartyLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyLocation.swift; sourceTree = "<group>"; };
@@ -116,6 +122,9 @@
 		076BF08F1680459100ACF08A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F51D3E191AE6BACE00E1D503 /* detailsBackground.png */,
+				F51D3E171AE6BAC400E1D503 /* dots.png */,
+				F51D3E151AE6BAB900E1D503 /* topBarBackground.png */,
 				F5FE52E51AD68205001CD1D7 /* pin_small.png */,
 				F57BD5FA1ACD5B460033080A /* pin.png */,
 				D3D60AED1953285C00BED91B /* firstaid.png */,
@@ -304,10 +313,13 @@
 				D3D60AFB1953285C00BED91B /* star.png in Resources */,
 				D3D60AE01953211900BED91B /* overlay_park.png in Resources */,
 				F5FE52DF1AD67D1F001CD1D7 /* TazLocations.plist in Resources */,
+				F51D3E1A1AE6BACE00E1D503 /* detailsBackground.png in Resources */,
 				D3D60AE11953211900BED91B /* overlay_park@2x.png in Resources */,
 				D3D60AF91953285C00BED91B /* ride.png in Resources */,
+				F51D3E161AE6BAB900E1D503 /* topBarBackground.png in Resources */,
 				D3D60AFA1953285C00BED91B /* ride@2x.png in Resources */,
 				D3D60AF51953285C00BED91B /* firstaid.png in Resources */,
+				F51D3E181AE6BAC400E1D503 /* dots.png in Resources */,
 				F5FE52E21AD67D1F001CD1D7 /* MagicMountain.plist in Resources */,
 				F5FE52E01AD67D1F001CD1D7 /* TweetyBirdLocations.plist in Resources */,
 				D3D60AF71953285C00BED91B /* food.png in Resources */,
