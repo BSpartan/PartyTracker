@@ -25,16 +25,6 @@
 		5278E26C1A02D5A000F267B6 /* ParkMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278E26B1A02D5A000F267B6 /* ParkMapViewController.swift */; };
 		5278E2701A02D5E200F267B6 /* MapOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278E26F1A02D5E200F267B6 /* MapOptionsViewController.swift */; };
 		D3CE500D195317350032F059 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CE500C195317350032F059 /* MapKit.framework */; };
-		D3D60AE01953211900BED91B /* overlay_park.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60ADE1953211900BED91B /* overlay_park.png */; };
-		D3D60AE11953211900BED91B /* overlay_park@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60ADF1953211900BED91B /* overlay_park@2x.png */; };
-		D3D60AF51953285C00BED91B /* firstaid.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AED1953285C00BED91B /* firstaid.png */; };
-		D3D60AF61953285C00BED91B /* firstaid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AEE1953285C00BED91B /* firstaid@2x.png */; };
-		D3D60AF71953285C00BED91B /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AEF1953285C00BED91B /* food.png */; };
-		D3D60AF81953285C00BED91B /* food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF01953285C00BED91B /* food@2x.png */; };
-		D3D60AF91953285C00BED91B /* ride.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF11953285C00BED91B /* ride.png */; };
-		D3D60AFA1953285C00BED91B /* ride@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF21953285C00BED91B /* ride@2x.png */; };
-		D3D60AFB1953285C00BED91B /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF31953285C00BED91B /* star.png */; };
-		D3D60AFC1953285C00BED91B /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D60AF41953285C00BED91B /* star@2x.png */; };
 		F51D3E161AE6BAB900E1D503 /* topBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F51D3E151AE6BAB900E1D503 /* topBarBackground.png */; };
 		F51D3E181AE6BAC400E1D503 /* dots.png in Resources */ = {isa = PBXBuildFile; fileRef = F51D3E171AE6BAC400E1D503 /* dots.png */; };
 		F51D3E1A1AE6BACE00E1D503 /* detailsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = F51D3E191AE6BACE00E1D503 /* detailsBackground.png */; };
@@ -75,16 +65,6 @@
 		5278E26B1A02D5A000F267B6 /* ParkMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkMapViewController.swift; sourceTree = "<group>"; };
 		5278E26F1A02D5E200F267B6 /* MapOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOptionsViewController.swift; sourceTree = "<group>"; };
 		D3CE500C195317350032F059 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D3D60ADE1953211900BED91B /* overlay_park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_park.png; sourceTree = "<group>"; };
-		D3D60ADF1953211900BED91B /* overlay_park@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay_park@2x.png"; sourceTree = "<group>"; };
-		D3D60AED1953285C00BED91B /* firstaid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstaid.png; sourceTree = "<group>"; };
-		D3D60AEE1953285C00BED91B /* firstaid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firstaid@2x.png"; sourceTree = "<group>"; };
-		D3D60AEF1953285C00BED91B /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
-		D3D60AF01953285C00BED91B /* food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food@2x.png"; sourceTree = "<group>"; };
-		D3D60AF11953285C00BED91B /* ride.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ride.png; sourceTree = "<group>"; };
-		D3D60AF21953285C00BED91B /* ride@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ride@2x.png"; sourceTree = "<group>"; };
-		D3D60AF31953285C00BED91B /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		D3D60AF41953285C00BED91B /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
 		F51D3E151AE6BAB900E1D503 /* topBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarBackground.png; sourceTree = "<group>"; };
 		F51D3E171AE6BAC400E1D503 /* dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dots.png; sourceTree = "<group>"; };
 		F51D3E191AE6BACE00E1D503 /* detailsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detailsBackground.png; sourceTree = "<group>"; };
@@ -127,16 +107,6 @@
 				F51D3E151AE6BAB900E1D503 /* topBarBackground.png */,
 				F5FE52E51AD68205001CD1D7 /* pin_small.png */,
 				F57BD5FA1ACD5B460033080A /* pin.png */,
-				D3D60AED1953285C00BED91B /* firstaid.png */,
-				D3D60AEE1953285C00BED91B /* firstaid@2x.png */,
-				D3D60AEF1953285C00BED91B /* food.png */,
-				D3D60AF01953285C00BED91B /* food@2x.png */,
-				D3D60AF11953285C00BED91B /* ride.png */,
-				D3D60AF21953285C00BED91B /* ride@2x.png */,
-				D3D60AF31953285C00BED91B /* star.png */,
-				D3D60AF41953285C00BED91B /* star@2x.png */,
-				D3D60ADE1953211900BED91B /* overlay_park.png */,
-				D3D60ADF1953211900BED91B /* overlay_park@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -301,28 +271,18 @@
 				F5FE52E31AD67D1F001CD1D7 /* MagicMountainAttractions.plist in Resources */,
 				07866ABD165EE2B400D7BB3A /* InfoPlist.strings in Resources */,
 				07866AC5165EE2B400D7BB3A /* Default.png in Resources */,
-				D3D60AF61953285C00BED91B /* firstaid@2x.png in Resources */,
 				F57BD5FB1ACD5B460033080A /* pin.png in Resources */,
 				07866AC7165EE2B400D7BB3A /* Default@2x.png in Resources */,
 				07866AC9165EE2B400D7BB3A /* Default-568h@2x.png in Resources */,
 				F5FE52E11AD67D1F001CD1D7 /* EntranceToGoliathRoute.plist in Resources */,
-				D3D60AFC1953285C00BED91B /* star@2x.png in Resources */,
 				07866ACC165EE2B400D7BB3A /* MainStoryboard_iPhone.storyboard in Resources */,
 				07866ACF165EE2B400D7BB3A /* MainStoryboard_iPad.storyboard in Resources */,
-				D3D60AF81953285C00BED91B /* food@2x.png in Resources */,
-				D3D60AFB1953285C00BED91B /* star.png in Resources */,
-				D3D60AE01953211900BED91B /* overlay_park.png in Resources */,
 				F5FE52DF1AD67D1F001CD1D7 /* TazLocations.plist in Resources */,
 				F51D3E1A1AE6BACE00E1D503 /* detailsBackground.png in Resources */,
-				D3D60AE11953211900BED91B /* overlay_park@2x.png in Resources */,
-				D3D60AF91953285C00BED91B /* ride.png in Resources */,
 				F51D3E161AE6BAB900E1D503 /* topBarBackground.png in Resources */,
-				D3D60AFA1953285C00BED91B /* ride@2x.png in Resources */,
-				D3D60AF51953285C00BED91B /* firstaid.png in Resources */,
 				F51D3E181AE6BAC400E1D503 /* dots.png in Resources */,
 				F5FE52E21AD67D1F001CD1D7 /* MagicMountain.plist in Resources */,
 				F5FE52E01AD67D1F001CD1D7 /* TweetyBirdLocations.plist in Resources */,
-				D3D60AF71953285C00BED91B /* food.png in Resources */,
 				F5FE52E61AD68205001CD1D7 /* pin_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
