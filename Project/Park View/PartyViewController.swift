@@ -29,13 +29,14 @@ class PartyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func setPartyProperties() {
-        self.partyTitle.text = "Testnaam"
-        self.partyLocation.text = "Eindhoven"
-        self.partyGenre.text = "Hardstyle"
-        self.partyArtistName.text = "Naam1  Naam1  Naam3  Naam4  Naam5  Naam6  Naam7"
-        self.partyTime.text = "12:00 - 00:00"
-        self.partyAge.text = "16+"
+    func setPartyProperties(title : NSString, location : NSString, partyTitle : NSString, partyGenre : NSString, partyArtist : NSString, partyTime : NSString, partyAge  : Int) {
+        self.partyTitle.text = title
+        self.partyName.text = partyTitle
+        self.partyLocation.text = location
+        self.partyGenre.text = partyGenre
+        self.partyArtistName.text = partyArtist
+        self.partyTime.text = partyTime
+        self.partyAge.text = String(partyAge) + "+"
     }
     
 

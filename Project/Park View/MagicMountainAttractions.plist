@@ -3,6 +3,20 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>partyage</key>
+		<integer>16</integer>
+		<key>partytime</key>
+		<string>22:00 - 04:00</string>
+		<key>partyartist</key>
+		<string>NAAM01    NAAM02    NAAM03    NAAM04</string>
+		<key>partygenre</key>
+		<string>HARDSTYLE</string>
+		<key>partyname</key>
+		<string>PARTYNAME01</string>
+		<key>locationName</key>
+		<string>EINDHOVEN</string>
+		<key>names</key>
+		<string>TEST01</string>
 		<key>name</key>
 		<string>Goliath</string>
 		<key>location</key>
@@ -13,6 +27,20 @@
 		<string>Intensity: 8/10</string>
 	</dict>
 	<dict>
+		<key>partytime</key>
+		<string>22:00 - 04:00</string>
+		<key>partyartist</key>
+		<string>NAAM01    NAAM02    NAAM03    NAAM04</string>
+		<key>partygenre</key>
+		<string>HARDSTYLE</string>
+		<key>partyname</key>
+		<string>PARTYNAME02</string>
+		<key>locationName</key>
+		<string>EINDHOVEN</string>
+		<key>names</key>
+		<string>TEST02</string>
+		<key>partyage</key>
+		<integer>16</integer>
 		<key>name</key>
 		<string>Batman</string>
 		<key>location</key>
@@ -23,6 +51,20 @@
 		<string>Intensity: 6/10</string>
 	</dict>
 	<dict>
+		<key>partytime</key>
+		<string>22:00 - 04:00</string>
+		<key>partyartist</key>
+		<string>NAAM01    NAAM02    NAAM03    NAAM04</string>
+		<key>partygenre</key>
+		<string>HARDSTYLE</string>
+		<key>partyname</key>
+		<string>PARTYNAME03</string>
+		<key>locationName</key>
+		<string>EINDHOVEN</string>
+		<key>names</key>
+		<string>TEST03</string>
+		<key>partyage</key>
+		<integer>16</integer>
 		<key>name</key>
 		<string>Ridler&apos;s Revenge</string>
 		<key>location</key>
@@ -33,6 +75,20 @@
 		<string>Intensity: 6/10</string>
 	</dict>
 	<dict>
+		<key>partytime</key>
+		<string>22:00 - 04:00</string>
+		<key>partyartist</key>
+		<string>NAAM01    NAAM02    NAAM03    NAAM04</string>
+		<key>partygenre</key>
+		<string>HARDSTYLE</string>
+		<key>partyname</key>
+		<string>PARTYNAME04</string>
+		<key>locationName</key>
+		<string>EINDHOVEN</string>
+		<key>names</key>
+		<string>TEST04</string>
+		<key>partyage</key>
+		<integer>16</integer>
 		<key>name</key>
 		<string>X2</string>
 		<key>location</key>
@@ -43,6 +99,20 @@
 		<string>Intensity: 10/10</string>
 	</dict>
 	<dict>
+		<key>partytime</key>
+		<string>22:00 - 04:00</string>
+		<key>partyartist</key>
+		<string>NAAM01    NAAM02    NAAM03    NAAM04</string>
+		<key>partygenre</key>
+		<string>HARDSTYLE</string>
+		<key>partyname</key>
+		<string>PARTYNAME05</string>
+		<key>locationName</key>
+		<string>EINDHOVEN</string>
+		<key>names</key>
+		<string>TEST05</string>
+		<key>partyage</key>
+		<integer>16</integer>
 		<key>name</key>
 		<string>Tatsu</string>
 		<key>location</key>
@@ -53,6 +123,20 @@
 		<string>Intensity: 7/10</string>
 	</dict>
 	<dict>
+		<key>partytime</key>
+		<string>22:00 - 04:00</string>
+		<key>partyartist</key>
+		<string>NAAM01    NAAM02    NAAM03    NAAM04</string>
+		<key>partygenre</key>
+		<string>HARDSTYLE</string>
+		<key>partyname</key>
+		<string>PARTYNAME06</string>
+		<key>locationName</key>
+		<string>EINDHOVEN</string>
+		<key>names</key>
+		<string>TETS06</string>
+		<key>partyage</key>
+		<integer>16</integer>
 		<key>name</key>
 		<string>Panda Express</string>
 		<key>location</key>
@@ -63,6 +147,20 @@
 		<string>Cost: $$</string>
 	</dict>
 	<dict>
+		<key>partytime</key>
+		<string>22:00 - 04:00</string>
+		<key>partyartist</key>
+		<string>NAAM01    NAAM02    NAAM03    NAAM04</string>
+		<key>partygenre</key>
+		<string>HARDSTYLE</string>
+		<key>partyname</key>
+		<string>PARTYNAME07</string>
+		<key>locationName</key>
+		<string>EINDHOVEN</string>
+		<key>names</key>
+		<string>TEST07</string>
+		<key>partyage</key>
+		<integer>16</integer>
 		<key>name</key>
 		<string>Cold Stone</string>
 		<key>location</key>
@@ -73,6 +171,20 @@
 		<string>Cost: $</string>
 	</dict>
 	<dict>
+		<key>partytime</key>
+		<string>22:00 - 04:00</string>
+		<key>partyartist</key>
+		<string>NAAM01    NAAM02    NAAM03    NAAM04</string>
+		<key>partygenre</key>
+		<string>HARDSTYLE</string>
+		<key>partyname</key>
+		<string>PARTYNAME08</string>
+		<key>locationName</key>
+		<string>EINDHOVEN</string>
+		<key>names</key>
+		<string>TEST08</string>
+		<key>partyage</key>
+		<integer>16</integer>
 		<key>name</key>
 		<string>First Aid</string>
 		<key>location</key>

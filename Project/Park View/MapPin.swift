@@ -28,6 +28,8 @@ class MapPin: MKAnnotationView {
         let attractionAnnotation = self.annotation as AttractionAnnotation
         image = UIImage(named: "pin_small")
         canShowCallout = false
+        
+        partyLocation = attractionAnnotation.partyLocation
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

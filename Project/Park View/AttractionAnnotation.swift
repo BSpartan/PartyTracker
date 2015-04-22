@@ -20,12 +20,12 @@ class AttractionAnnotation: NSObject, MKAnnotation {
   var coordinate: CLLocationCoordinate2D
   var title: String
   var subtitle: String
-  var type: AttractionType
+    var partyLocation : PartyLocation
   
-  init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String, type: AttractionType) {
+  init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String, partylocation: PartyLocation) {
     self.coordinate = coordinate
     self.title = title
     self.subtitle = subtitle
-    self.type = type
+    self.partyLocation = partylocation
   }
 }
